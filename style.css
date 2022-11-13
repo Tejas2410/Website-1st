@@ -1,0 +1,85 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header>h1{
+    font-weight: 400;
+}
+
+header{
+    display: flex; /*Block ele to inline ele*/
+    justify-content: space-between;
+    /* positioning the content*/
+
+    margin: 0 3rem;
+    /* top bottom 0 and right left 3 rem */
+
+    
+}
+
+li{
+    list-style: none;
+    font-size: 1.5rem; /*depends on root element ex. html*/
+    /*1 rem = 16 px by default (we can change by styling html*/
+      
+}
+
+/* To remove anchor tag underline */
+a{
+
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+/* nav li me content hai utna hi space lega */
+ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav{
+    /* nav k andar k content ko kahi bhi ghuma skte hai */
+    position: relative;
+    /* top se niche 16px content move hogs jo li me hai */
+    top: 2 rem;
+
+    width: 22rem;
+}
+
+.showcase_img{
+     width: 95vw; /*view width */
+     /* 95% of screen size responsive
+     size adjust according to the screen */
+
+     margin: 1rem;
+}
+
+article{
+    display: flex;
+}
+
+.container{
+    text-align: center;
+    margin-right: 2rem;
+    padding: 1rem;
+
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    display: flex; 
+    /* first make inline then make position center */
+    justify-content: center;
+    height: 3rem;
+    font-size: 1.5rem;
+    align-items: center; /*vertical align to center */
+}
